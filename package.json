@@ -10,6 +10,7 @@
   "author": "lance fallon",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.12.0",
     "browserify": "^13.0.1",
     "flux": "^2.1.1",
     "gulp": "^3.9.1",
