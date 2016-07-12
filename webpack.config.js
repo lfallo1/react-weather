@@ -2,8 +2,8 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'script!jquery/dist/jquery.js',
-    'script!foundation-sites/dist/foundation.js',
+    'script!jquery/dist/jquery.min.js',
+    'script!foundation-sites/dist/foundation.min.js',
     './src/main.jsx'
   ],
   externals: {
@@ -17,12 +17,12 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/js/main.js'
+    filename: './public/bundle.js'
   },
   resolve: {
     root: __dirname,
     alias: {
-      Main: 'src/components/Main.jsx',
+      App: 'src/components/App.jsx',
       Nav: 'src/components/Nav.jsx',
       Weather: 'src/components/Weather.jsx',
       WeatherForm: 'src/components/WeatherForm.jsx',
@@ -30,7 +30,8 @@ module.exports = {
       About: 'src/components/About.jsx',
       Examples: 'src/components/Examples.jsx',
       openWeatherMap: 'src/api/openWeatherMap.jsx',
-      applicationStyle: 'src/css/style.css'
+      ErrorModal: 'src/components/ErrorModal.jsx',
+      applicationStyles: 'src/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
   },
