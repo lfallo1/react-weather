@@ -81,3 +81,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['html', 'jsx', 'lint', 'css', 'images', 'open', 'watch']);
+
+gulp.task('serve', ['html', 'jsx', 'lint', 'css', 'images', 'watch']);
