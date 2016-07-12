@@ -84,4 +84,4 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['html', 'jsx', 'lint', 'css', 'images', 'open', 'watch']);
 
-gulp.task('start', ['open']);
+gulp.task('start', ['html', 'jsx', 'css', 'images', 'open']);
