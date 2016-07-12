@@ -6,7 +6,7 @@
   "scripts": {
     "default": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "gulp start"
+    "start" : "bower install && gulp start"
   },
   "author": "lance fallon",
   "license": "ISC",
